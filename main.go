@@ -132,7 +132,7 @@ func wrapText(input string) string {
 		output[iEnd+l] = '\n'
 	}
 
-	// Copy the last line (which is not necessary lineLength long).
+	// Copy the last line (which is not necessarily lineLength long).
 	lastStart := lines * lineLength
 	lastEnd := len(input)
 	copy([]byte(output[lastStart+lines:lastEnd+lines]), input[lastStart:lastEnd])
