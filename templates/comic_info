@@ -1,0 +1,6 @@
+{{.Title}}
+-------------------------------------------------------------------------------
+Number: {{.Num}}
+Date: {{.Month}}/{{.Day}}/{{.Year}}
+Image: {{.Img}}
+{{printf "Alt text: %s" .Alt | wrapText}}
